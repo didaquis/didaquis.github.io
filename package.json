@@ -1,11 +1,11 @@
 {
   "name": "didaquis.github.io",
-  "version": "0.1.2",
+  "version": "1.2.12",
   "private": true,
   "scripts": {
     "build": "next build",
     "export": "next build && next export",
-    "deploy": "npm run export && touch out/.nojekyll",
+    "pre-deploy": "npm run export && touch out/.nojekyll",
     "dev": "next dev",
     "start": "next start",
     "lint": "eslint --ext .jsx,.js ."
