@@ -1,6 +1,6 @@
 {
   "name": "didaquis.github.io",
-  "version": "1.2.12",
+  "version": "1.2.14",
   "private": true,
   "scripts": {
     "build": "next build",
@@ -13,7 +13,7 @@
   "author": "Dídac García (https://didaquis.github.io/)",
   "license": "MIT",
   "dependencies": {
-    "next": "9.3.1",
+    "next": "9.4.0",
     "react": "16.13.1",
     "react-dom": "16.13.1"
   },
