@@ -5,6 +5,7 @@ My own website made with React. This is a [Next.js](https://nextjs.org/) project
 
 ## How to develop
 * Run in development mode `npm run dev`
+* Run linter `npm run lint`
 
 ## How to deploy
 
