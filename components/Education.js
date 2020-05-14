@@ -4,7 +4,7 @@ export default () => (
 		<article>
 			<h3>📚 Professional Scrum Master I</h3>
 			<h4>Scrum.org, PSM I certification<span> (2020)</span></h4>
-			<p>The Professional Scrum Master I (PSM I) certification demonstrates a fundamental level of Scrum mastery. PSM I certificate prove that I understand Scrum as described in the Scrum Guide and how to apply it in Scrum Teams</p>
+			<p>The Professional Scrum Master I (PSM I) certification demonstrates a fundamental level of Scrum mastery. PSM I certificate proves that I understand Scrum as described in the Scrum Guide and how to apply it in Scrum Teams</p>
 		</article>
 		<article>
 			<h3>📚 Full-Stack Web Development Bootcamp</h3>
