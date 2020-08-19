@@ -1,4 +1,4 @@
-export default () => (
+const AboutMe = () => (
 	<main>
 		<section>
 			<h2>About me</h2>
@@ -10,3 +10,5 @@ export default () => (
 		</section>
 	</main>
 )
+
+export default AboutMe

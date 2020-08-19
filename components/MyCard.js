@@ -1,4 +1,4 @@
-export default () => (
+const MyCard = () => (
 	<header>
 		<div className="logo-container">
 			<span className="logo"></span>
@@ -22,3 +22,5 @@ export default () => (
 		</ul>
 	</header>
 )
+
+export default MyCard

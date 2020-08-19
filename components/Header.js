@@ -1,6 +1,6 @@
 import Head from 'next/head'
 
-export default () => (
+const Header = () => (
 	<Head>
 		<title>Dídac García &#8226; Web developer</title>
 		<link rel="apple-touch-icon" href="/favicon.png" sizes="254x254" />
@@ -38,3 +38,5 @@ export default () => (
 		<meta name="twitter:image:src" content="https://didaquis.github.io/images/portrait.jpg" />
 	</Head>
 )
+
+export default Header

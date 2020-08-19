@@ -1,4 +1,4 @@
-export default () => (
+const Education = () => (
 	<section className="full-width-section">
 		<h2>Education</h2>
 		<article>
@@ -28,3 +28,5 @@ export default () => (
 		</article>
 	</section>
 )
+
+export default Education

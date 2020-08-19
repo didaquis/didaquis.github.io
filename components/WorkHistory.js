@@ -1,4 +1,4 @@
-export default () => (
+const WorkHistory = () => (
 	<section className="full-width-section">
 		<h2>Work History</h2>
 		<article>
@@ -19,3 +19,5 @@ export default () => (
 		</article>
 	</section>
 )
+
+export default WorkHistory
