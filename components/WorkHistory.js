@@ -3,7 +3,7 @@ const WorkHistory = () => (
 		<h2>Work History</h2>
 		<article>
 			<h3>🛠 PromoFarma <span>(June 2020 - present)</span></h3>
-			<p>The largest marketplace of health, beauty and personal care products in Europe. Frontend developer (Vue.js, GraphQL, TypeScript,Cypress, Jest and Node.js)</p>
+			<p>The largest marketplace of health, beauty and personal care products in Europe. Frontend developer (Vue.js, GraphQL, TypeScript, Cypress, Jest and Node.js)</p>
 		</article>
 		<article>
 			<h3>🛠 Ditec Comunicaciones <span>(April 2018 - June 2020)</span></h3>

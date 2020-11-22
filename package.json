@@ -1,6 +1,6 @@
 {
   "name": "didaquis.github.io",
-  "version": "1.2.18",
+  "version": "1.2.19",
   "private": true,
   "scripts": {
     "build": "next build",
