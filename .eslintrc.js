@@ -29,7 +29,7 @@ module.exports = {
 		'no-console': 'warn',
 		'no-unused-vars': 'warn',
 		'keyword-spacing': ['error', { 'before': true, 'after': true }],
-		'space-infix-ops': ['error', {'int32Hint': false}],
+		'space-infix-ops': ['error', { 'int32Hint': false }],
 		'comma-spacing': ['error'],
 		'arrow-spacing': ['error'],
 		'semi-spacing': ['error'],
@@ -37,7 +37,8 @@ module.exports = {
 		'no-multi-spaces': 'error',
 		'valid-typeof': 'error',
 		'quotes': ['error', 'single'],
-		'indent': ['error', 'tab', {'SwitchCase': 1}],
+		'indent': ['error', 'tab', { 'SwitchCase': 1 }],
+		'object-curly-spacing': ['error', 'always']
 	},
 	settings: {
 		react: {
