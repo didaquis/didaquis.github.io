@@ -38,7 +38,8 @@ module.exports = {
 		'valid-typeof': 'error',
 		'quotes': ['error', 'single'],
 		'indent': ['error', 'tab', { 'SwitchCase': 1 }],
-		'object-curly-spacing': ['error', 'always']
+		'object-curly-spacing': ['error', 'always'],
+		'curly': 'error'
 	},
 	settings: {
 		react: {
