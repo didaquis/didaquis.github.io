@@ -9,6 +9,10 @@ My own website made with React. This is a [Next.js](https://nextjs.org/) project
 
 ## How to deploy
 
-* Run `npm run pre-deploy`
-* Copy all the content of `out` folder and paste in the branch master of repo https://github.com/didaquis/didaquis.github.io.git
+* Prepare the export: 
+  * `npm run export`
+* Delete all files on target repository:
+  * `npm run delete-content-of-target-repo` (requires both repositories to be under the same folder)
+* Copy all the content of `out` folder and paste in the branch master of repo https://github.com/didaquis/didaquis.github.io.git 
+  * `npm run update-content-of-target-repo` (requires both repositories to be under the same folder)
 * Make sure the `.nojekyll` file has been copied
