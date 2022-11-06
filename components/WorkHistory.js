@@ -15,7 +15,7 @@ const WorkHistory = () => (
 		</article>
 		<article>
 			<h3>🛠 Opció Racing <span>(2013 - 2014)</span></h3>
-			<p>Web development & webmaster tasks in Prestashop enviroment</p>
+			<p>Web development & webmaster tasks in Prestashop environment</p>
 		</article>
 	</section>
 )
