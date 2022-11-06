@@ -5,13 +5,20 @@ module.exports = {
 		es6: true,
 		node: true,
 	},
-	parser: 'babel-eslint',
+	parser: '@babel/eslint-parser',
 	parserOptions: {
 		ecmaFeatures: {
 			jsx: true,
 		},
-		ecmaVersion: 2018,
+		ecmaVersion: 2020,
 		sourceType: 'module',
+		requireConfigFile: false,
+		babelOptions: {
+			// babelrc: false,
+			// configFile: false,
+			// your babel options
+			presets: ['@babel/preset-react'],
+		},
 	},
 	plugins: ['react'],
 
