@@ -7,7 +7,7 @@ Name: Dídac G.
 Role: Web Developer.
 Twitter: @didaquis
 Github: https://github.com/didaquis
-Location: Terrassa, Spain.
+Location: Barcelona, Spain.
 
 
 /* SITE */
