@@ -3,6 +3,9 @@
 
 My own website made with React. This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/zeit/next.js/tree/canary/packages/create-next-app).
 
+## Requirements
+Use Node 18.15 or higher
+
 ## How to develop
 * Run in development mode `npm run dev`
 * Run linter `npm run lint`
