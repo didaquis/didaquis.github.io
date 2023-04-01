@@ -8,7 +8,7 @@ const Education = () => (
 		</article>
 		<article>
 			<h3>📚 Full-Stack Web Development Bootcamp</h3>
-			<h4>Skylab Coders Academy<span> (2018)</span></h4>
+			<h4>Skylab Coders Academy (ISDI Coders)<span> (2018)</span></h4>
 			<p>JavaScript (ES6), Sass, Git & Git Flow, agile methodologies, TDD, MERN stack (MongoDB, Express, React, Node)</p>
 		</article>
 		<article>
