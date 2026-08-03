@@ -4,7 +4,7 @@ const Education = () => (
 		<article>
 			<h3>📚 Accessible Code</h3>
 			<h4>The A11Y Collective<span> (2024)</span></h4>
-			<p>Building accessible interfaces: semantic HTML, ARIA, keyboard navigation and focus management, accessible forms and WCAG conformance</p>
+			<p>Writing code for screen readers, keyboard navigation and other assistive technologies: semantic HTML5 and ARIA, dynamic changes and live regions, show and hide techniques, focus management, accessible forms and accessibility testing</p>
 		</article>
 		<article>
 			<h3>📚 Code Smells &amp; Refactoring</h3>
