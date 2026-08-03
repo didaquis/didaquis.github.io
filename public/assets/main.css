@@ -24,13 +24,20 @@ a:focus-visible {
     margin: 0.8em 0;
 }
 
-.fa-ul.main-list {
+/* These three used to come from Font Awesome's .fa-ul class. */
+.main-list {
+    list-style: none;
+    padding-left: 0;
     margin-left: 0;
 }
 
 .main-list-item-icon {
-    width: 36px;
+    width: 1.4em;
+    height: 1.4em;
+    vertical-align: -0.32em;
+    margin-right: 8px;
     color: #46433A;
+    fill: currentColor;
 }
 
 .logo-container {
