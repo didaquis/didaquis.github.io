@@ -2,6 +2,16 @@ const Education = () => (
 	<section className="full-width-section">
 		<h2>Education</h2>
 		<article>
+			<h3>📚 Accessible Code</h3>
+			<h4>The A11Y Collective<span> (2024)</span></h4>
+			<p>Writing code for screen readers, keyboard navigation and other assistive technologies: semantic HTML5 and ARIA, dynamic changes and live regions, show and hide techniques, focus management, accessible forms and accessibility testing</p>
+		</article>
+		<article>
+			<h3>📚 Code Smells &amp; Refactoring</h3>
+			<h4>Codesai<span> (2024)</span></h4>
+			<p>Identifying code smells and applying refactoring techniques to improve the design, readability and maintainability of existing code</p>
+		</article>
+		<article>
 			<h3>📚 Professional Scrum Master I</h3>
 			<h4>Scrum.org, PSM I certification<span> (2020)</span></h4>
 			<p>The Professional Scrum Master I (PSM I) certification demonstrates a fundamental level of Scrum mastery. PSM I certificate proves that I understand Scrum as described in the Scrum Guide and how to apply it in Scrum Teams</p>
@@ -17,7 +27,7 @@ const Education = () => (
 			<p>Development of web systems in client and server environments. Distributed applications (SOAP, REST, XML)</p>
 		</article>
 		<article>
-			<h3>📚 Websites creation and publishing</h3>
+			<h3>📚 Website creation and publishing</h3>
 			<h4>Certificate of professionalism IFCD0110<span> (2013)</span></h4>
 			<p>Websites development with HTML5, CSS3, JavaScript, jQuery and PHP. Web development of forms and interaction with MySQL databases</p>
 		</article>
