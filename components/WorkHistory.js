@@ -3,19 +3,19 @@ const WorkHistory = () => (
 		<h2>Work History</h2>
 		<article>
 			<h3>🛠 PromoFarma <span>(June 2020 - present)</span></h3>
-			<p>The largest marketplace of health, beauty and personal care products in Europe. Frontend developer (Vue.js, GraphQL, Apollo, TypeScript, Nest.js, Jest and Node.js)</p>
+			<p>The largest marketplace of health, beauty and personal care products in Europe. Frontend developer (Vue.js, GraphQL, Apollo, TypeScript, NestJS, Jest and Node.js)</p>
 		</article>
 		<article>
 			<h3>🛠 Ditec Comunicaciones <span>(April 2018 - June 2020)</span></h3>
-			<p>Innovative operating room solutions for a cutting-edge digital medical environment. Full stack JavaScript development (Node.js, Express, EJS, Socket.io, Jasmine, Nightwatch) and MySQL</p>
+			<p>Innovative operating room solutions for a cutting-edge digital medical environment. Full-stack JavaScript development (Node.js, Express, EJS, Socket.IO, Jasmine, Nightwatch) and MySQL</p>
 		</article>
 		<article>
-			<h3>🛠 Worksolutions <span>(December 2014 - January 2018)</span></h3>
-			<p>Web development (PHP, MySQL, Bootstrap, JavaScript). Wordpress. WebServices (SOAP). Linux servers management</p>
+			<h3>🛠 WorkSolutions <span>(December 2014 - January 2018)</span></h3>
+			<p>Web development (PHP, MySQL, Bootstrap, JavaScript). WordPress. Web services (SOAP). Linux servers management</p>
 		</article>
 		<article>
 			<h3>🛠 Opció Racing <span>(2013 - 2014)</span></h3>
-			<p>Web development & webmaster tasks in Prestashop environment</p>
+			<p>Web development & webmaster tasks in PrestaShop environment</p>
 		</article>
 	</section>
 )

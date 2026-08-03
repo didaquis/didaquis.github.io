@@ -17,7 +17,7 @@ const Education = () => (
 			<p>Development of web systems in client and server environments. Distributed applications (SOAP, REST, XML)</p>
 		</article>
 		<article>
-			<h3>📚 Websites creation and publishing</h3>
+			<h3>📚 Website creation and publishing</h3>
 			<h4>Certificate of professionalism IFCD0110<span> (2013)</span></h4>
 			<p>Websites development with HTML5, CSS3, JavaScript, jQuery and PHP. Web development of forms and interaction with MySQL databases</p>
 		</article>
