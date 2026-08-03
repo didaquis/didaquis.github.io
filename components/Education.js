@@ -1,4 +1,4 @@
-import { education } from '../data/cv'
+import { education } from '../data/education'
 
 const Education = () => (
 	<section className="full-width-section">

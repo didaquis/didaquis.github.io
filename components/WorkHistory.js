@@ -1,4 +1,4 @@
-import { jobs } from '../data/cv'
+import { jobs } from '../data/jobs'
 
 const WorkHistory = () => (
 	<section className="full-width-section">
