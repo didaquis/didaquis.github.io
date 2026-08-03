@@ -26,11 +26,11 @@ const MyCard = () => (
 		<ul className="main-list">
 			<li className="main-list-item">
 				<GitHubIcon />
-				<a href="https://github.com/didaquis" target="_blank" rel="noopener noreferrer" title="didaquis on GitHub">Explore my GitHub</a>
+				<a href="https://github.com/didaquis" target="_blank" rel="noopener noreferrer">Explore my GitHub</a>
 			</li>
 			<li className="main-list-item">
 				<LinkedInIcon />
-				<a href="https://www.linkedin.com/in/didac-garcia/" target="_blank" rel="noopener noreferrer" title="didaquis on LinkedIn">Contact me on LinkedIn</a>
+				<a href="https://www.linkedin.com/in/didac-garcia/" target="_blank" rel="noopener noreferrer">Contact me on LinkedIn</a>
 			</li>
 		</ul>
 	</header>
