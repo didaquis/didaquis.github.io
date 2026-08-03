@@ -4,7 +4,6 @@ export default function Document () {
 	return (
 		<Html lang="en">
 			<Head>
-				<link rel="stylesheet" href="/assets/normalize.css" />
 				<link rel="stylesheet" href="/assets/main.css" />
 				<link rel="stylesheet" href="/assets/typography/roboto-mono.css" />
 			</Head>

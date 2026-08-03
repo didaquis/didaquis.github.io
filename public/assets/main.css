@@ -1,4 +1,16 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* What normalize.css was actually contributing to this page. The rest of it
+   normalised forms, tables and media the site does not have, or worked around
+   browsers that no longer exist. */
+html {
+    -webkit-text-size-adjust: 100%;
+}
+
 body {
+    margin: 0;
     font-family: 'Roboto Mono', monospace;
     color: #46433A;
     background-color: #F1EED9;
@@ -125,9 +137,11 @@ header, .about-section, .full-width-section {
         text-align: right;
     }
 
+    /* 47 + 53 reaches exactly the right edge of .content. Under content-box
+       this was 47% + 50% plus 24px of padding, which overshot by a pixel. */
     .about-section {
-        width: 50%;
         margin-left: 47%;
+        width: 53%;
     }
 
     .full-width-section {
