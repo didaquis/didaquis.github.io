@@ -23,7 +23,7 @@ Other scripts:
 
 - `npm run lint` — run ESLint. The deploy pipeline runs this too, so a failing lint
   blocks a deploy.
-- `npm run export` — build the static site into `out/`. Useful to check the production
+- `npm run build` — build the static site into `out/`. Useful to check the production
   output locally.
 
 ## Deployment
@@ -31,7 +31,7 @@ Other scripts:
 Pushing to `main` deploys the site. No manual steps.
 
 The [deploy workflow](.github/workflows/deploy.yml) installs dependencies, runs the
-linter, exports the static site and publishes `out/` to GitHub Pages. Deployment status
+linter, builds the static site and publishes `out/` to GitHub Pages. Deployment status
 is visible under the repository's Actions tab.
 
 Pages is configured to deploy from GitHub Actions rather than from a branch, so the
