@@ -1,7 +1,6 @@
 const js = require('@eslint/js')
 const globals = require('globals')
 const react = require('eslint-plugin-react')
-const babelParser = require('@babel/eslint-parser')
 
 module.exports = [
 	{
@@ -12,16 +11,11 @@ module.exports = [
 	{
 		files: ['**/*.js', '**/*.jsx'],
 		languageOptions: {
-			parser: babelParser,
 			ecmaVersion: 'latest',
 			sourceType: 'module',
 			parserOptions: {
 				ecmaFeatures: {
 					jsx: true,
-				},
-				requireConfigFile: false,
-				babelOptions: {
-					presets: ['@babel/preset-react'],
 				},
 			},
 			globals: {
