@@ -34,7 +34,7 @@ jobs:
         run: npm run lint
 
       - name: Build static site
-        run: npm run export
+        run: npm run build
 
       - name: Setup Pages
         uses: actions/configure-pages@v6
