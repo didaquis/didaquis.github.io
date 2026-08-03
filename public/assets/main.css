@@ -114,15 +114,24 @@ h3 span, h4 span {
     margin: 42px auto 0 auto;
 }
 
+/* Below 768px the column fills the viewport, so this padding is the only thing
+   between the text and the edge of the screen: 16px, the margin iOS and Material
+   both settle on. Above it the column is centred with room to spare and the
+   padding is only internal rhythm, so it drops back to 12. */
 header, .about-section, .full-width-section {
     margin-bottom: 42px;
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 @media (min-width: 768px) {
     .content {
         margin-top: 84px;
+    }
+
+    header, .about-section, .full-width-section {
+        padding-left: 12px;
+        padding-right: 12px;
     }
 
     /* The card floats so the About me text sits beside the portrait. Anything
