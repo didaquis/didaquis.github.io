@@ -5,7 +5,7 @@ body {
 }
 
 a:link, a:visited, a:hover, a:active {
-    color: #CE534D;
+    color: #A63A34;
     text-decoration: none;
 }
 
@@ -13,18 +13,31 @@ a:hover {
     text-decoration: underline
 }
 
+a:focus-visible {
+    outline: 3px solid #46433A;
+    outline-offset: 3px;
+    border-radius: 2px;
+}
+
 .main-list-item {
     font-size: 1.1em;
     margin: 0.8em 0;
 }
 
-.fa-ul.main-list {
+/* These three used to come from Font Awesome's .fa-ul class. */
+.main-list {
+    list-style: none;
+    padding-left: 0;
     margin-left: 0;
 }
 
 .main-list-item-icon {
-    width: 36px;
+    width: 1.4em;
+    height: 1.4em;
+    vertical-align: -0.32em;
+    margin-right: 8px;
     color: #46433A;
+    fill: currentColor;
 }
 
 .logo-container {
@@ -35,12 +48,11 @@ a:hover {
     width: 256px;
     height: 256px;
     display: inline-block;
-    background-size: cover;
+    object-fit: cover;
     border-radius: 50%;
     -moz-border-radius: 50%;
     border: 2px solid #F1EED9;
     box-shadow: 0 0 0 3px #46433A;
-    background-image: url('/images/portrait.jpg');
 }
 
 .author-container h1 {
@@ -91,7 +103,7 @@ h3 span, h4 span {
         margin: 42px auto 0 auto;
     }
 
-    header, main {
+    header, .about-section {
         margin-bottom: 42px;
         padding-left: 9px;
         padding-right: 9px;
@@ -116,7 +128,7 @@ h3 span, h4 span {
         margin: 42px auto 0 auto;
     }
 
-    header, main {
+    header, .about-section {
         margin-bottom: 42px;
         padding-left: 18px;
         padding-right: 18px;
@@ -147,6 +159,9 @@ h3 span, h4 span {
         margin: 84px auto 0 auto;
     }
 
+    /* The card floats so the About me text sits beside the portrait. Anything
+       after it must clear the float, or its first lines wrap into the portrait
+       column: the float's margin box reaches 42px below the card itself. */
     header {
         float: left;
         text-align: right;
@@ -156,18 +171,19 @@ h3 span, h4 span {
         text-align: right;
     }
 
-    main {
+    .about-section {
         width: 50%;
         margin-left: 47%;
     }
 
-    header, main {
+    header, .about-section {
         margin-bottom: 42px;
         padding-left: 12px;
         padding-right: 12px;
     }
 
     .full-width-section {
+        clear: both;
         margin-bottom: 42px;
         padding-left: 12px;
         padding-right: 12px;
