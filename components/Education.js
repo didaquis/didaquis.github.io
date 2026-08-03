@@ -3,22 +3,22 @@ const Education = () => (
 		<h2>Education</h2>
 		<article>
 			<h3>📚 Accessible Code</h3>
-			<h4>The A11Y Collective<span> (2024)</span></h4>
+			<h4><a href="https://www.a11y-collective.com" target="_blank" rel="noopener noreferrer" title="The A11Y Collective">The A11Y Collective</a><span> (2024)</span></h4>
 			<p>Writing code for screen readers, keyboard navigation and other assistive technologies: semantic HTML5 and ARIA, dynamic changes and live regions, show and hide techniques, focus management, accessible forms and accessibility testing</p>
 		</article>
 		<article>
 			<h3>📚 Code Smells &amp; Refactoring</h3>
-			<h4>Codesai<span> (2024)</span></h4>
+			<h4><a href="https://codesai.com" target="_blank" rel="noopener noreferrer" title="Codesai">Codesai</a><span> (2024)</span></h4>
 			<p>Identifying code smells and applying refactoring techniques to improve the design, readability and maintainability of existing code</p>
 		</article>
 		<article>
 			<h3>📚 Professional Scrum Master I</h3>
-			<h4>Scrum.org, PSM I certification<span> (2020)</span></h4>
+			<h4><a href="https://www.scrum.org" target="_blank" rel="noopener noreferrer" title="Scrum.org">Scrum.org</a>, PSM I certification<span> (2020)</span></h4>
 			<p>The Professional Scrum Master I (PSM I) certification demonstrates a fundamental level of Scrum mastery. PSM I certificate proves that I understand Scrum as described in the Scrum Guide and how to apply it in Scrum Teams</p>
 		</article>
 		<article>
 			<h3>📚 Full-Stack Web Development Bootcamp</h3>
-			<h4>Skylab Coders Academy (ISDI Coders)<span> (2018)</span></h4>
+			<h4>Skylab Coders Academy (<a href="https://isdicoders.com" target="_blank" rel="noopener noreferrer" title="ISDI Coders">ISDI Coders</a>)<span> (2018)</span></h4>
 			<p>JavaScript (ES6), Sass, Git & Git Flow, agile methodologies, TDD, MERN stack (MongoDB, Express, React, Node)</p>
 		</article>
 		<article>
