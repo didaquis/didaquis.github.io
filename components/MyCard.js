@@ -12,10 +12,6 @@ const MyCard = () => (
 				<a href="https://github.com/didaquis" target="_blank" rel="noopener noreferrer" title="didaquis on GitHub">Explore my GitHub</a>
 			</li>
 			<li className="main-list-item">
-				<span className="fa fa-twitter fa-lg main-list-item-icon"></span>&nbsp;
-				<a href="https://twitter.com/didaquis" target="_blank" rel="noopener noreferrer" title="didaquis on Twitter">Follow me on Twitter</a>
-			</li>
-			<li className="main-list-item">
 				<span className="fa fa-linkedin fa-lg main-list-item-icon"></span>&nbsp;
 				<a href="https://www.linkedin.com/in/didac-garcia/" target="_blank" rel="noopener noreferrer" title="didaquis on LinkedIn">Contact me on LinkedIn</a>
 			</li>
