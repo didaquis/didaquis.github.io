@@ -21,16 +21,6 @@ const Header = () => (
 		<meta property="og:image" content="https://didaquis.github.io/images/portrait.jpg" />
 		<meta property="og:description" content="My name is Dídac and I'm a senior web developer" />
 		<meta property="og:site_name" content="Dídac García &#8226; Senior web developer" />
-
-		{
-			// Twitter Card tags
-		}
-		<meta name="twitter:card" content="summary" />
-		<meta name="twitter:title" content="Dídac García &#8226; Senior web developer" />
-		<meta name="twitter:site" content="didaquis" />
-		<meta name="twitter:url" content="https://didaquis.github.io" />
-		<meta name="twitter:description" content="My name is Dídac and I'm a senior web developer" />
-		<meta name="twitter:image:src" content="https://didaquis.github.io/images/portrait.jpg" />
 	</Head>
 )
 
