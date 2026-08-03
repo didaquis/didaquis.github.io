@@ -13,7 +13,7 @@ module.exports = [
 		files: ['**/*.js', '**/*.jsx'],
 		languageOptions: {
 			parser: babelParser,
-			ecmaVersion: 2020,
+			ecmaVersion: 'latest',
 			sourceType: 'module',
 			parserOptions: {
 				ecmaFeatures: {
@@ -27,8 +27,6 @@ module.exports = [
 			globals: {
 				...globals.browser,
 				...globals.node,
-				// NextJs does not require you to import React into each component. so suppress errors for missing 'import React' in files.
-				React: 'writable',
 			},
 		},
 		settings: {
