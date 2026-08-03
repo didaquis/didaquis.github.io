@@ -37,10 +37,11 @@ components in fixed order: `Header`, then inside `.content` → `MyCard`, `About
   literal JSX inside each component — updating the site's text means editing the
   component, not a data file.
 - **`components/Header.js` is not a visual header.** It renders only `next/head` content:
-  title, favicons, canonical URL, Open Graph and Twitter Card tags. The visible header
-  card is `components/MyCard.js`. When changing the site title, description, or portrait,
-  update every duplicated occurrence in `Header.js` — the strings repeat across the plain,
-  OG, and Twitter meta blocks.
+  title, favicons, canonical URL and Open Graph tags. The visible header card is
+  `components/MyCard.js`. When changing the site title, description, or portrait, update
+  every duplicated occurrence in `Header.js` — the strings repeat across the plain and OG
+  meta blocks. There are no Twitter Card tags: X falls back to Open Graph, so the
+  duplicated block was removed.
 - **Styling is plain global CSS in `public/`, not CSS Modules or a framework.**
   `pages/_document.js` loads `normalize.css`, `main.css`, Font Awesome 4.7, and Roboto
   Mono via `<link>` tags from `/assets/`. Class names in components refer to selectors in
