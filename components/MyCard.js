@@ -4,7 +4,7 @@ const MyCard = () => (
 			<span className="logo"></span>
 		</div>
 		<div className="author-container"><h1>Dídac García</h1></div>
-		<div className="tagline-container"><p>Web developer</p></div>
+		<div className="tagline-container"><p>Senior web developer</p></div>
 		<hr />
 		<ul className="fa-ul main-list">
 			<li className="main-list-item">
