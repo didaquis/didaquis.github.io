@@ -33,9 +33,10 @@ components in fixed order: `Header`, then inside `.content` → `MyCard`, `About
 `WorkHistory`, `Education`.
 
 - **All components are stateless arrow functions returning JSX.** No props, no hooks, no
-  client-side state anywhere. Content (jobs, education entries, links) is hardcoded
-  literal JSX inside each component — updating the site's text means editing the
-  component, not a data file.
+  client-side state anywhere. Jobs and education entries live as data in `data/jobs.js`
+  and `data/education.js`, imported by `WorkHistory.js` and `Education.js`; other content
+  (links, about text) is hardcoded literal JSX inside the component — updating those
+  means editing the component, not a data file.
 - **`components/Header.js` is not a visual header.** It renders only `next/head` content:
   title, favicons, canonical URL and Open Graph tags. The visible header card is
   `components/MyCard.js`. When changing the site title, description, or portrait, update
