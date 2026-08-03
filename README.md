@@ -42,5 +42,12 @@ built output is never committed.
 ```
 pages/       Next.js routes
 components/  React components
+data/        Work history and education entries
 public/      Static assets served as-is
 ```
+
+## Credits
+
+The original design started from [Compass](https://github.com/excentris/compass), a
+Jekyll theme by Eduardo Rubio, released under the MIT licence. The stylesheet has since
+been rewritten, but the layout and the colour palette come from there.

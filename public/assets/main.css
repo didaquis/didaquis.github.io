@@ -1,4 +1,16 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* What normalize.css was actually contributing to this page. The rest of it
+   normalised forms, tables and media the site does not have, or worked around
+   browsers that no longer exist. */
+html {
+    -webkit-text-size-adjust: 100%;
+}
+
 body {
+    margin: 0;
     font-family: 'Roboto Mono', monospace;
     color: #46433A;
     background-color: #F1EED9;
@@ -50,7 +62,6 @@ a:focus-visible {
     display: inline-block;
     object-fit: cover;
     border-radius: 50%;
-    -moz-border-radius: 50%;
     border: 2px solid #F1EED9;
     box-shadow: 0 0 0 3px #46433A;
 }
@@ -77,10 +88,7 @@ p span.smile-face {
 hr {
     border: 0;
     height: 1px;
-    background-image: -webkit-linear-gradient(left, transparent, #46433A, transparent);
-    background-image: -moz-linear-gradient(left, transparent, #46433A, transparent);
-    background-image: -ms-linear-gradient(left, transparent, #46433A, transparent);
-    background-image: -o-linear-gradient(left, transparent, #46433A, transparent);
+    background-image: linear-gradient(to right, transparent, #46433A, transparent);
 }
 
 article {
@@ -97,66 +105,33 @@ h3 span, h4 span {
     font-size: 0.9em;
 }
 
-@media (min-width: 320px) {
-    .content {
-        width: 320px;
-        margin: 42px auto 0 auto;
-    }
-
-    header, .about-section {
-        margin-bottom: 42px;
-        padding-left: 9px;
-        padding-right: 9px;
-    }
-
-    .full-width-section {
-        margin-bottom: 42px;
-        padding-left: 9px;
-        padding-right: 9px;
-    }
+/* The column grows with the viewport and stops at 748px, the width the
+   two-column layout below is built around. This used to be six breakpoints
+   stepping 320 / 360 / 460 / 540 / 700 / 748, which left up to 100px of unused
+   width at the sizes in between. */
+.content {
+    width: min(100%, 748px);
+    margin: 42px auto 0 auto;
 }
 
-@media (min-width: 360px) {
-    .content {
-        width: 360px;
-    }
-}
-
-@media (min-width: 480px) {
-    .content {
-        width: 460px;
-        margin: 42px auto 0 auto;
-    }
-
-    header, .about-section {
-        margin-bottom: 42px;
-        padding-left: 18px;
-        padding-right: 18px;
-    }
-
-    .full-width-section {
-        margin-bottom: 42px;
-        padding-left: 18px;
-        padding-right: 18px;
-    }
-}
-
-@media (min-width: 560px) {
-    .content {
-        width: 540px;
-    }
-}
-
-@media (min-width: 720px) {
-    .content {
-        width: 700px;
-    }
+/* Below 768px the column fills the viewport, so this padding is the only thing
+   between the text and the edge of the screen: 16px, the margin iOS and Material
+   both settle on. Above it the column is centred with room to spare and the
+   padding is only internal rhythm, so it drops back to 12. */
+header, .about-section, .full-width-section {
+    margin-bottom: 42px;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 @media (min-width: 768px) {
     .content {
-        width: 748px;
-        margin: 84px auto 0 auto;
+        margin-top: 84px;
+    }
+
+    header, .about-section, .full-width-section {
+        padding-left: 12px;
+        padding-right: 12px;
     }
 
     /* The card floats so the About me text sits beside the portrait. Anything
@@ -171,21 +146,14 @@ h3 span, h4 span {
         text-align: right;
     }
 
+    /* 47 + 53 reaches exactly the right edge of .content. Under content-box
+       this was 47% + 50% plus 24px of padding, which overshot by a pixel. */
     .about-section {
-        width: 50%;
         margin-left: 47%;
-    }
-
-    header, .about-section {
-        margin-bottom: 42px;
-        padding-left: 12px;
-        padding-right: 12px;
+        width: 53%;
     }
 
     .full-width-section {
         clear: both;
-        margin-bottom: 42px;
-        padding-left: 12px;
-        padding-right: 12px;
     }
 }

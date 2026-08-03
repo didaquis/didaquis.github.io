@@ -1,7 +1,6 @@
 const js = require('@eslint/js')
 const globals = require('globals')
 const react = require('eslint-plugin-react')
-const babelParser = require('@babel/eslint-parser')
 
 module.exports = [
 	{
@@ -12,23 +11,16 @@ module.exports = [
 	{
 		files: ['**/*.js', '**/*.jsx'],
 		languageOptions: {
-			parser: babelParser,
-			ecmaVersion: 2020,
+			ecmaVersion: 'latest',
 			sourceType: 'module',
 			parserOptions: {
 				ecmaFeatures: {
 					jsx: true,
 				},
-				requireConfigFile: false,
-				babelOptions: {
-					presets: ['@babel/preset-react'],
-				},
 			},
 			globals: {
 				...globals.browser,
 				...globals.node,
-				// NextJs does not require you to import React into each component. so suppress errors for missing 'import React' in files.
-				React: 'writable',
 			},
 		},
 		settings: {
