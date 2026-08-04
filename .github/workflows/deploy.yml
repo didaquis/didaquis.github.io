@@ -1,7 +1,9 @@
-name: Deploy to GitHub Pages
+name: Verify and deploy
 
 on:
   push:
+    branches: [main]
+  pull_request:
     branches: [main]
   workflow_dispatch:
 
@@ -10,9 +12,12 @@ permissions:
   pages: write
   id-token: write
 
+# Deploys queue behind each other so a run is never interrupted mid-publish.
+# Pull request runs group per branch and do cancel, so pushing again to a branch
+# drops the run it supersedes.
 concurrency:
-  group: pages
-  cancel-in-progress: false
+  group: ${{ github.event_name == 'pull_request' && format('pr-{0}', github.ref) || 'pages' }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 jobs:
   build:
@@ -37,14 +42,17 @@ jobs:
         run: npm run build
 
       - name: Setup Pages
+        if: github.event_name != 'pull_request'
         uses: actions/configure-pages@v6
 
       - name: Upload artifact
+        if: github.event_name != 'pull_request'
         uses: actions/upload-pages-artifact@v5
         with:
           path: out
 
   deploy:
+    if: github.event_name != 'pull_request'
     needs: build
     runs-on: ubuntu-latest
     environment:
