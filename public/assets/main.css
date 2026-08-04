@@ -156,9 +156,12 @@ h4 {
 /* Charter takes the prose and Roboto Mono keeps every structural and data role,
    so the page stops sounding the same for what he wrote and for a list of
    technologies. */
+/* 1.2em, not the 1.1em that would match the old mono x-height for x-height.
+   Charter has a low x-height and finer strokes, so matching it exactly left the
+   text block lighter than the mono had been and read as smaller. */
 .about-section p, article p {
     font-family: 'Charter', Georgia, serif;
-    font-size: 1.1em;
+    font-size: 1.2em;
 }
 
 /* 58ch of Charter lands around 67 characters a line. The unit measures the "0",
