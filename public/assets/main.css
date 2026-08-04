@@ -2,9 +2,6 @@
     box-sizing: border-box;
 }
 
-/* What normalize.css was actually contributing to this page. The rest of it
-   normalised forms, tables and media the site does not have, or worked around
-   browsers that no longer exist. */
 html {
     -webkit-text-size-adjust: 100%;
 }
@@ -36,7 +33,6 @@ a:focus-visible {
     margin: 0.8em 0;
 }
 
-/* These three used to come from Font Awesome's .fa-ul class. */
 .main-list {
     list-style: none;
     padding-left: 0;
@@ -105,19 +101,15 @@ h3 span, h4 span {
     font-size: 0.9em;
 }
 
-/* The column grows with the viewport and stops at 748px, the width the
-   two-column layout below is built around. This used to be six breakpoints
-   stepping 320 / 360 / 460 / 540 / 700 / 748, which left up to 100px of unused
-   width at the sizes in between. */
+/* 748px is the width the two-column layout below is built around. */
 .content {
     width: min(100%, 748px);
     margin: 42px auto 0 auto;
 }
 
-/* Below 768px the column fills the viewport, so this padding is the only thing
-   between the text and the edge of the screen: 16px, the margin iOS and Material
-   both settle on. Above it the column is centred with room to spare and the
-   padding is only internal rhythm, so it drops back to 12. */
+/* Below 768px the column fills the viewport, so this padding is all that keeps
+   the text off the edge of the screen. Above it the column is centred with room
+   to spare and the padding is only internal rhythm. */
 header, .about-section, .full-width-section {
     margin-bottom: 42px;
     padding-left: 16px;
@@ -146,8 +138,7 @@ header, .about-section, .full-width-section {
         text-align: right;
     }
 
-    /* 47 + 53 reaches exactly the right edge of .content. Under content-box
-       this was 47% + 50% plus 24px of padding, which overshot by a pixel. */
+    /* 47 + 53 reaches exactly the right edge of .content. */
     .about-section {
         margin-left: 47%;
         width: 53%;

@@ -2,10 +2,8 @@
  * Roboto Mono, SIL Open Font License 1.1. Licence text in roboto-mono/LICENSE.txt.
  * Files taken from the @fontsource/roboto-mono package.
  *
- * Only the latin and latin-ext subsets are shipped. The site's text needs latin
- * alone — every accented character it uses sits below U+0100 — and latin-ext is
- * kept as headroom for other Western European spellings. unicode-range means a
- * subset is only downloaded if the page actually uses a character from it.
+ * Only the latin and latin-ext subsets are shipped. The page needs latin alone;
+ * latin-ext is headroom for other Western European spellings.
  */
 
 /* latin-ext */
