@@ -16,7 +16,7 @@ const MyCard = () => (
 		<div className="logo-container">
 			<picture>
 				<source srcSet="/images/portrait.webp" type="image/webp" />
-				<img className="logo" src="/images/portrait.jpg" alt="Dídac García" width="256" height="256" />
+				<img className="logo" src="/images/portrait.jpg" alt="Dídac García wearing a black cap, standing by the sea" width="256" height="256" />
 			</picture>
 		</div>
 		<div className="author-container"><h1>Dídac García</h1></div>
@@ -24,12 +24,16 @@ const MyCard = () => (
 		<hr />
 		<ul className="main-list">
 			<li className="main-list-item">
-				<GitHubIcon />
-				<a href="https://github.com/didaquis" target="_blank" rel="noopener noreferrer">Explore my GitHub</a>
+				<a href="https://github.com/didaquis" target="_blank" rel="noopener noreferrer">
+					<GitHubIcon />
+					<span>Explore my GitHub<span className="visually-hidden"> (opens in a new tab)</span></span>
+				</a>
 			</li>
 			<li className="main-list-item">
-				<LinkedInIcon />
-				<a href="https://www.linkedin.com/in/didac-garcia/" target="_blank" rel="noopener noreferrer">Contact me on LinkedIn</a>
+				<a href="https://www.linkedin.com/in/didac-garcia/" target="_blank" rel="noopener noreferrer">
+					<LinkedInIcon />
+					<span>Contact me on LinkedIn<span className="visually-hidden"> (opens in a new tab)</span></span>
+				</a>
 			</li>
 		</ul>
 	</header>

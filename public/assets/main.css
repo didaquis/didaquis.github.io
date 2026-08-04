@@ -28,9 +28,31 @@ a:focus-visible {
     border-radius: 2px;
 }
 
+/* Text only assistive technologies read: off screen but not display:none, which
+   would hide it from them too. */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+}
+
 .main-list-item {
     font-size: 1.1em;
-    margin: 0.8em 0;
+    margin: 0.2em 0;
+}
+
+/* The whole row is the link, icon included, so the touch target clears 44px
+   without the list looking any airier: the padding takes up the space the
+   margin used to waste. */
+.main-list-item a {
+    display: inline-flex;
+    align-items: center;
+    padding: 11px 0;
 }
 
 .main-list {
@@ -42,7 +64,7 @@ a:focus-visible {
 .main-list-item-icon {
     width: 1.4em;
     height: 1.4em;
-    vertical-align: -0.32em;
+    flex-shrink: 0;
     margin-right: 8px;
     color: #46433A;
     fill: currentColor;
@@ -96,7 +118,7 @@ h2 {
 }
 
 h3 span, h4 span {
-    color: #706b5d;
+    color: #6a6557;
     font-style: italic;
     font-size: 0.9em;
 }
