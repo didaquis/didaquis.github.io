@@ -44,12 +44,19 @@ components in fixed order: `Header`, then inside `.content` → `MyCard`, `About
   meta blocks. There are no Twitter Card tags: X falls back to Open Graph, so the
   duplicated block was removed.
 - **Styling is plain global CSS in `public/`, not CSS Modules or a framework.**
-  `pages/_document.js` loads `normalize.css`, `main.css` and Roboto Mono via `<link>` tags
+  `pages/_document.js` loads `main.css`, Roboto Mono and Charter via `<link>` tags
   from `/assets/`. Class names in components refer to selectors in
   `public/assets/main.css`. Icons are inline `<svg>` components declared at the top of
   `components/MyCard.js` — there is no icon font. Font Awesome 4.7 used to be vendored
   under `public/assets/` and loaded as a fourth stylesheet; it was dropped because two
   icons did not justify 105 KB of CSS plus webfont over the wire.
+- **Two families, split by role.** Roboto Mono holds every structural and data role —
+  headings, company, dates, role, the stack line — and Charter holds the prose
+  (`.about-section p, article p`). Both ship the 400 upright only: nothing sets prose in
+  bold or italic, and `.date` is upright by design because asking for an italic that is
+  not served gets a browser-synthesised oblique. Charter is the copy Bitstream gave the
+  X Consortium, taken from the `charter-webfont` package; its licence requires the notice
+  in `charter/LICENSE.txt` to travel with the font, so do not delete that file.
 - **`next.config.js` holds one setting: `output: 'export'`.** That is what makes `next
   build` emit the static `out/` directory. Do not add `basePath`/`assetPrefix`: the site
   is served from the domain root (a GitHub user page), and a path prefix would break the

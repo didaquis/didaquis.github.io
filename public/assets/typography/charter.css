@@ -1,0 +1,20 @@
+/*
+ * Charter, by Matthew Carter. The copy Bitstream contributed to the X
+ * Consortium; licence text in charter/LICENSE.txt, which the licence requires
+ * to travel with the font. BITSTREAM CHARTER is a registered trademark of
+ * Bitstream Inc.
+ *
+ * Files taken from the charter-webfont package
+ * (https://github.com/chawyehsu/charter-webfont).
+ *
+ * Only the upright is shipped. Nothing on the page sets prose in italic or
+ * bold, and an unused weight is bytes over the wire for nothing.
+ */
+
+@font-face {
+  font-family: 'Charter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Charter'), local('Bitstream Charter'), url(charter/charter-regular.woff2) format('woff2');
+}

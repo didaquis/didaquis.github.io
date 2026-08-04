@@ -139,7 +139,10 @@ h2 {
     color: #6a6557;
 }
 
+/* Larger than the browser default, which left it barely above the prose once
+   Charter raised the body size. */
 h3 {
+    font-size: 1.3em;
     margin-bottom: 4px;
 }
 
@@ -150,9 +153,19 @@ h4 {
     color: #6a6557;
 }
 
+/* Charter takes the prose and Roboto Mono keeps every structural and data role,
+   so the page stops sounding the same for what he wrote and for a list of
+   technologies. */
+.about-section p, article p {
+    font-family: 'Charter', Georgia, serif;
+    font-size: 1.1em;
+}
+
+/* 58ch of Charter lands around 67 characters a line. The unit measures the "0",
+   which is wider than the average lowercase, so the two numbers do not match. */
 article p {
     margin-top: 16px;
-    max-width: 65ch;
+    max-width: 58ch;
 }
 
 .stack {
