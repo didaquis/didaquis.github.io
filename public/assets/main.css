@@ -46,9 +46,8 @@ a:focus-visible {
     margin: 0.2em 0;
 }
 
-/* The whole row is the link, icon included, so the touch target clears 44px
-   without the list looking any airier: the padding takes up the space the
-   margin used to waste. */
+/* 11px of padding takes the target past the 44px of SC 2.5.5; the list margin
+   above is small on purpose, so the gap between rows is target, not air. */
 .main-list-item a {
     display: inline-flex;
     align-items: center;
