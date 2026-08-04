@@ -123,13 +123,26 @@ h2 {
     background-position: bottom left;
 }
 
-h3 span, h4 span {
+/* No italic: only the 400 upright of Roboto Mono is served, so asking for one
+   got a browser-synthesised oblique. The colour and the size already say this
+   is metadata. */
+.date {
     color: #6a6557;
-    font-style: italic;
     font-size: 0.9em;
 }
 
+.role {
+    color: #46433A;
+}
+
+.sector {
+    color: #6a6557;
+}
+
+/* Larger than the browser default, which left it barely above the prose once
+   Charter raised the body size. */
 h3 {
+    font-size: 1.3em;
     margin-bottom: 4px;
 }
 
@@ -140,9 +153,48 @@ h4 {
     color: #6a6557;
 }
 
+/* Charter takes the prose and Roboto Mono keeps every structural and data role,
+   so the page stops sounding the same for what he wrote and for a list of
+   technologies. */
+/* 1.2em, not the 1.1em that would match the old mono x-height for x-height.
+   Charter has a low x-height and finer strokes, so matching it exactly left the
+   text block lighter than the mono had been and read as smaller. */
+.about-section p, article p {
+    font-family: 'Charter', Georgia, serif;
+    font-size: 1.2em;
+}
+
+/* 58ch of Charter lands around 67 characters a line. The unit measures the "0",
+   which is wider than the average lowercase, so the two numbers do not match. */
 article p {
     margin-top: 16px;
+    max-width: 58ch;
+}
+
+.stack {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 8px;
+    margin: 16px 0 0 0;
+    padding: 0;
     max-width: 65ch;
+    font-size: 0.9em;
+    color: #6a6557;
+    list-style: none;
+}
+
+/* Each technology carries its own separator and cannot break inside itself, so
+   a wrapped line always starts with a name and never with a stray middot. Text
+   flow could not guarantee that: a separator surrounded by spaces gives the
+   browser a break opportunity on either side of it. */
+.stack li {
+    white-space: nowrap;
+}
+
+/* Generated content, so assistive technologies skip the separators and announce
+   the technologies as discrete list items. */
+.stack li:not(:last-child)::after {
+    content: ' ·';
 }
 
 /* 748px is the width the two-column layout below is built around. */
