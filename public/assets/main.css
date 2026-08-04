@@ -172,6 +172,10 @@ article p {
 }
 
 .stack {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    column-gap: 16px;
     margin-top: 16px;
     max-width: 65ch;
     font-size: 0.9em;
@@ -184,23 +188,28 @@ article p {
     letter-spacing: 0.08em;
 }
 
-/* The spaces inside the separator below are the list's only break
-   opportunities: the markup leaves none between items. */
-.stack-list,
-.stack-list li {
-    display: inline;
-}
-
+/* Each technology carries its own separator and cannot break inside itself, so
+   a wrapped line always starts with a name and never with a stray middot. Text
+   flow could not guarantee that: a separator surrounded by spaces gives the
+   browser a break opportunity on either side of it. */
 .stack-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 8px;
+    flex: 1 1 0;
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
+.stack-list li {
+    white-space: nowrap;
+}
+
 /* Generated content, so assistive technologies skip the separators and announce
    the technologies as discrete list items. */
-.stack-list li::before {
-    content: ' · ';
+.stack-list li:not(:last-child)::after {
+    content: ' ·';
 }
 
 /* 748px is the width the two-column layout below is built around. */
