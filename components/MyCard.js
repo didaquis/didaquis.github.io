@@ -18,7 +18,10 @@ const LinkedInIcon = () => (
 const MyCard = () => (
 	<header>
 		<div className="logo-container">
-			<img className="logo" src="/images/portrait.jpg" alt="Dídac García" width="256" height="256" />
+			<picture>
+				<source srcSet="/images/portrait.webp" type="image/webp" />
+				<img className="logo" src="/images/portrait.jpg" alt="Dídac García" width="256" height="256" />
+			</picture>
 		</div>
 		<div className="author-container"><h1>Dídac García</h1></div>
 		<div className="tagline-container"><p>Senior web developer</p></div>
