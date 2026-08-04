@@ -3,10 +3,10 @@ import { jobs } from '../data/jobs'
 const WorkHistory = () => (
 	<section className="full-width-section" aria-labelledby="work-history-heading">
 		<h2 id="work-history-heading">Work History</h2>
-		{jobs.map(({ company, dates, role, description, stack }) => (
+		{jobs.map(({ company, dates, role, sector, description, stack }) => (
 			<article key={company}>
 				<h3><span aria-hidden="true">🛠</span>{` ${company} `}<span>{`(${dates})`}</span></h3>
-				<h4>{role}</h4>
+				<h4>{role} · <span>{sector}</span></h4>
 				<p>{description}</p>
 				<div className="stack">
 					<span className="stack-label">Stack</span>
