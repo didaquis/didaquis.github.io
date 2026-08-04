@@ -2,10 +2,8 @@
  * Roboto Mono, SIL Open Font License 1.1. Licence text in roboto-mono/LICENSE.txt.
  * Files taken from the @fontsource/roboto-mono package.
  *
- * Only the latin and latin-ext subsets are shipped. The site's text needs latin
- * alone — every accented character it uses sits below U+0100 — and latin-ext is
- * kept as headroom for other Western European spellings. unicode-range means a
- * subset is only downloaded if the page actually uses a character from it.
+ * Only the latin and latin-ext subsets are shipped. The page needs latin alone;
+ * latin-ext is headroom for other Western European spellings.
  */
 
 /* latin-ext */
@@ -14,7 +12,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local('Roboto Mono'), local('RobotoMono-Regular'), url(roboto-mono/roboto-mono-latin-ext-400-normal.woff2) format('woff2');
+  src: url(roboto-mono/roboto-mono-latin-ext-400-normal.woff2) format('woff2');
   unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
@@ -24,6 +22,6 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local('Roboto Mono'), local('RobotoMono-Regular'), url(roboto-mono/roboto-mono-latin-400-normal.woff2) format('woff2');
+  src: url(roboto-mono/roboto-mono-latin-400-normal.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }

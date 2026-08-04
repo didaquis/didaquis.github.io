@@ -12,9 +12,6 @@ const Header = () => (
 		<meta name="author" content="Dídac García" />
 		<meta name="description" content="Senior web developer" />
 
-		{
-			// Open Graph tags
-		}
 		<meta property="og:type" content="website" />
 		<meta property="og:title" content="Dídac García &#8226; Senior web developer" />
 		<meta property="og:url" content="https://didaquis.github.io" />
