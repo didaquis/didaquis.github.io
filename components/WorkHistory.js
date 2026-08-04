@@ -8,14 +8,11 @@ const WorkHistory = () => (
 				<h3><span aria-hidden="true">🛠</span>{` ${company} `}<span className="date">{`(${dates})`}</span></h3>
 				<h4 className="role">{role} · <span className="sector">{sector}</span></h4>
 				<p>{description}</p>
-				<div className="stack">
-					<span className="stack-label">Stack</span>
-					<ul className="stack-list">
-						{stack.map((tech) => (
-							<li key={tech}>{tech}</li>
-						))}
-					</ul>
-				</div>
+				<ul className="stack" aria-label="Technologies">
+					{stack.map((tech) => (
+						<li key={tech}>{tech}</li>
+					))}
+				</ul>
 			</article>
 		))}
 	</section>
