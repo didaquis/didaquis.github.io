@@ -9,8 +9,13 @@ html {
 body {
     margin: 0;
     font-family: 'Roboto Mono', monospace;
+    line-height: 1.6;
     color: #46433A;
     background-color: #F1EED9;
+}
+
+h1, h2, h3, h4 {
+    line-height: 1.2;
 }
 
 a:link, a:visited, a:hover, a:active {
@@ -69,7 +74,7 @@ a:focus-visible {
     fill: currentColor;
 }
 
-.logo-container {
+header {
     text-align: center;
 }
 
@@ -87,12 +92,10 @@ a:focus-visible {
     font-size: 2.5em;
     margin-top: 20px;
     margin-bottom: 0;
-    text-align: center;
 }
 
 .tagline-container p {
     font-size: 1.3em;
-    text-align: center;
     margin-top: 10px;
     margin-bottom: 14px;
 }
@@ -113,13 +116,33 @@ article {
 }
 
 h2 {
-    text-decoration: underline;
+    padding-bottom: 8px;
+    background-image: linear-gradient(to right, #46433A, transparent);
+    background-size: 100% 1px;
+    background-repeat: no-repeat;
+    background-position: bottom left;
 }
 
 h3 span, h4 span {
     color: #6a6557;
     font-style: italic;
     font-size: 0.9em;
+}
+
+h3 {
+    margin-bottom: 4px;
+}
+
+h4 {
+    margin-top: 4px;
+    margin-bottom: 16px;
+    font-weight: 400;
+    color: #6a6557;
+}
+
+article p {
+    margin-top: 16px;
+    max-width: 65ch;
 }
 
 /* 748px is the width the two-column layout below is built around. */
@@ -155,14 +178,10 @@ header, .about-section, .full-width-section {
         text-align: right;
     }
 
-    .author-container h1, .logo-container, .tagline-container p {
-        text-align: right;
-    }
-
-    /* 47 + 53 reaches exactly the right edge of .content. */
+    /* 45 + 55 reaches exactly the right edge of .content. */
     .about-section {
-        margin-left: 47%;
-        width: 53%;
+        margin-left: 45%;
+        width: 55%;
     }
 
     .full-width-section {
