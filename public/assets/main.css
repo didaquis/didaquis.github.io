@@ -123,9 +123,11 @@ h2 {
     background-position: bottom left;
 }
 
+/* No italic: only the 400 upright of Roboto Mono is served, so asking for one
+   got a browser-synthesised oblique. The colour and the size already say this
+   is metadata. */
 .date {
     color: #6a6557;
-    font-style: italic;
     font-size: 0.9em;
 }
 
