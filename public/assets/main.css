@@ -123,10 +123,18 @@ h2 {
     background-position: bottom left;
 }
 
-h3 span, h4 span {
+.date {
     color: #6a6557;
     font-style: italic;
     font-size: 0.9em;
+}
+
+.role {
+    color: #46433A;
+}
+
+.sector {
+    color: #6a6557;
 }
 
 h3 {

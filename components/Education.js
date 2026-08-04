@@ -6,7 +6,7 @@ const Education = () => (
 		{education.map(({ course, institution, year, description }) => (
 			<article key={course}>
 				<h3><span aria-hidden="true">📚</span>{` ${course}`}</h3>
-				<h4>{institution}<span>{` (${year})`}</span></h4>
+				<h4>{institution}<span className="date">{` (${year})`}</span></h4>
 				<p>{description}</p>
 			</article>
 		))}

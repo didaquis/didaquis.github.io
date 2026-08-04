@@ -5,8 +5,8 @@ const WorkHistory = () => (
 		<h2 id="work-history-heading">Work History</h2>
 		{jobs.map(({ company, dates, role, sector, description, stack }) => (
 			<article key={company}>
-				<h3><span aria-hidden="true">🛠</span>{` ${company} `}<span>{`(${dates})`}</span></h3>
-				<h4>{role} · <span>{sector}</span></h4>
+				<h3><span aria-hidden="true">🛠</span>{` ${company} `}<span className="date">{`(${dates})`}</span></h3>
+				<h4 className="role">{role} · <span className="sector">{sector}</span></h4>
 				<p>{description}</p>
 				<div className="stack">
 					<span className="stack-label">Stack</span>
