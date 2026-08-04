@@ -26,3 +26,6 @@ yarn-error.log*
 
 # superpowers specs and plans
 /docs/
+
+# local dev server config for Claude Code
+/.claude/launch.json
