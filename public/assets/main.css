@@ -100,19 +100,28 @@ header {
     margin-bottom: 14px;
 }
 
-p span.smile-face {
+/* Mono, even though it sits inside the prose: this is a drawing made of
+   characters, not a sentence, and Charter renders the arms as loose accents
+   around a face it has no glyph for. */
+.smile-face {
+    font-family: 'Roboto Mono', monospace;
     white-space: nowrap;
     line-height: 220%;
 }
 
+/* Flat, because the fade below is what marks the start of a section. This rule
+   divides the card and says nothing about hierarchy, so it stays quiet and
+   leaves the gesture to the headings. */
 hr {
     border: 0;
     height: 1px;
-    background-image: linear-gradient(to right, transparent, #46433A, transparent);
+    background-color: rgba(70, 67, 58, 0.3);
 }
 
+/* Comfortably more than the gaps inside an entry, so the stack reads as
+   belonging to the description above it rather than to the job below. */
 article {
-    margin-bottom: 42px;
+    margin-bottom: 56px;
 }
 
 h2 {
@@ -165,9 +174,14 @@ h4 {
 }
 
 /* 58ch of Charter lands around 67 characters a line. The unit measures the "0",
-   which is wider than the average lowercase, so the two numbers do not match. */
+   which is wider than the average lowercase, so the two numbers do not match.
+
+   The bottom margin is zeroed on purpose: the browser default is 1em, which
+   collapses against the stack's margin below and wins, so the gap that binds a
+   stack to its description was being set by the prose font size rather than by
+   anything here. */
 article p {
-    margin-top: 16px;
+    margin: 16px 0 0 0;
     max-width: 58ch;
 }
 
@@ -175,7 +189,7 @@ article p {
     display: flex;
     flex-wrap: wrap;
     column-gap: 8px;
-    margin: 16px 0 0 0;
+    margin: 10px 0 0 0;
     padding: 0;
     max-width: 65ch;
     font-size: 0.9em;
