@@ -109,10 +109,13 @@ header {
     line-height: 220%;
 }
 
+/* Flat, because the fade below is what marks the start of a section. This rule
+   divides the card and says nothing about hierarchy, so it stays quiet and
+   leaves the gesture to the headings. */
 hr {
     border: 0;
     height: 1px;
-    background-image: linear-gradient(to right, transparent, #46433A, transparent);
+    background-color: rgba(70, 67, 58, 0.3);
 }
 
 article {
