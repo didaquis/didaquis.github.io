@@ -100,7 +100,11 @@ header {
     margin-bottom: 14px;
 }
 
-p span.smile-face {
+/* Mono, even though it sits inside the prose: this is a drawing made of
+   characters, not a sentence, and Charter renders the arms as loose accents
+   around a face it has no glyph for. */
+.smile-face {
+    font-family: 'Roboto Mono', monospace;
     white-space: nowrap;
     line-height: 220%;
 }
