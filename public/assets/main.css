@@ -224,12 +224,21 @@ article p {
 /* The frame is a square board plus a line of text above and below it, about
    48px together whatever the width. The 10/11 ratio Lichess suggests ignores
    that, so it clipped the bottom line: 8px short at 400px, 13px on a phone.
-   50px leaves room for rounding and for a slightly taller fallback font. */
+   50px leaves room for rounding and for a slightly taller fallback font.
+
+   Lichess snaps the board to a multiple of 8 device pixels and leaves the
+   remainder on the left, so on a phone the board sat several pixels off
+   centre. A multiple of 8 CSS pixels is a whole number of those steps at any
+   integer pixel ratio, so it leaves nothing over. Browsers without round()
+   keep the unrounded pair above it. */
 .puzzle-frame {
     display: block;
     width: 100%;
     max-width: 400px;
     height: calc(min(100cqi, 400px) + 50px);
+    width: round(down, min(100cqi, 400px), 8px);
+    height: calc(round(down, min(100cqi, 400px), 8px) + 50px);
+    margin: 0 auto;
     border: 0;
 }
 
@@ -274,5 +283,11 @@ header, .about-section, .full-width-section {
 
     .full-width-section {
         clear: both;
+    }
+
+    /* Centred on a phone, where the rounding leaves up to 7px spare beside
+       it; here it lines up with the text above it instead. */
+    .puzzle-frame {
+        margin: 0;
     }
 }
