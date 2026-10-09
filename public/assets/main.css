@@ -168,7 +168,7 @@ h4 {
 /* 1.2em, not the 1.1em that would match the old mono x-height for x-height.
    Charter has a low x-height and finer strokes, so matching it exactly left the
    text block lighter than the mono had been and read as smaller. */
-.about-section p, article p {
+.about-section p, article p, .puzzle-intro {
     font-family: 'Charter', Georgia, serif;
     font-size: 1.2em;
 }
@@ -209,6 +209,28 @@ article p {
    the technologies as discrete list items. */
 .stack li:not(:last-child)::after {
     content: ' ·';
+}
+
+/* The section is a container so the frame can size its height off the column
+   width with cqi; a percentage height would resolve against the parent's height. */
+.puzzle-section {
+    container-type: inline-size;
+}
+
+.puzzle-intro {
+    max-width: 58ch;
+}
+
+/* The frame is a square board plus a line of text above and below it, about
+   48px together whatever the width. The 10/11 ratio Lichess suggests ignores
+   that, so it clipped the bottom line: 8px short at 400px, 13px on a phone.
+   50px leaves room for rounding and for a slightly taller fallback font. */
+.puzzle-frame {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    height: calc(min(100cqi, 400px) + 50px);
+    border: 0;
 }
 
 /* 748px is the width the two-column layout below is built around. */
